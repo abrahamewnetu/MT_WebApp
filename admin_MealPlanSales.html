@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>View a Report</title>
+</head>
+<body>
+	<br>
+	<div style="text-align: center;">
+		<h1>View a Report - Morgan's Cafeteria</h1>
+		<p><input name="button" value="Generate Report" onclick="genreport()" type="button"></p>
+		<div id="salesreport">
+			<table style="width: 50%; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="2" cellspacing="2">
+				<tbody>
+					<tr>
+						<td style="background-color: white;">Meal Plan Type</td>
+						<td style="background-color: white;">Number of Meals Sold</td>
+					</tr>
+					
+					<tr>
+						<td style="background-color: white;">Student Meal Plan - Resident</td>
+						<td style="background-color: white;">337</td>
+					</tr>
+					
+					<tr>
+						<td style="background-color: white;">Student Meal Plan - Commuter</td>
+						<td style="background-color: white;">194</td>
+					</tr>
+					
+					<tr>
+						<td style="background-color: white;">Dining Dollars </td>
+						<td style="background-color: white;">146</td>
+					</tr>
+					<tr>
+						<td style="background-color: white;">Staff</td>
+						<td style="background-color: white;">33</td>
+					</tr>
+					<tr>
+						<td style="background-color: white;">General public</td>
+						<td style="background-color: white;">152</td>
+					</tr>
+					
+					<tr>
+						<td style="background-color: white;">Total</td>
+						<td style="background-color: white;">862</td>
+					</tr>
+				</tbody>
+			</table>
+			<center>
+				<form method="get" action="salesreport_in_excel_file.xlsx"><button type="submit">Export</button>
+				</form>
+			</center>
+		</div>
+		<br>
+	</div>
+	
+	<script>
+	function genreport() {
+		document.getElementById("salesreport").style.display = "block";
+	}
+	</script>
+	<div style="text-align: center;"><a href="admin_FSMain.html">previous page</a>
+	</div>
+</body>
+</html>
